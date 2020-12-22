@@ -1,0 +1,11 @@
+{
+  "name": "jobs",
+  "version": "1.0.0",
+  "description": "Fictional landing page for a job search company",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aldo Trujillo",
+  "license": "ISC"
+}
