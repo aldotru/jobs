@@ -4,8 +4,18 @@
   "description": "Fictional landing page for a job search company",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver compile:sass"
   },
   "author": "Aldo Trujillo",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "swiper": "^6.4.5"
+  }
 }

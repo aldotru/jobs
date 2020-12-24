@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- swiper slider -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+
+  <title>Job Search - Find the best jobs arou|2 nd the world</title>
+</head>
+<body>
+  <!-- START: header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <a href="/" class="header__logo-box">
+          <img src="./assets/img/logo.svg" alt="Company logo" class="header__logo">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">About Us</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Blog</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">How it works?</a>
+            </li>
+          </ul>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Login </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="btn">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <img src="./assets/img/hero-decor.svg" alt="Blue background decoration item" class="header__decor">
+  </header>
+  <!-- END: header -->
+  <!-- START: hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__row">
+        <div class="hero__info-box">
+          <span class="hero__subline">Innovative solution for sourcing candidates</span>
+          <h1 class="hero__header">Help us find <span class="hero__header-span">the missing puzzle, get rewarded</span> properly.</h1>
+          <form action="" class="search">
+            <input type="text" class="search__input" placeholder="Keyword, job title or company">
+            <button class="search__btn">
+              <img src="./assets/img/search-icon.svg" alt="Search icon" class="search__icon">
+            </button>
+          </form>
+        </div>
+        <div class="hero__img-box">
+          <img src="./assets/img/hero-illustration.svg" alt="Illustration" class="hero__img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: hero -->
+  <!-- START: jobs -->
+  <section class="jobs">
+    <div class="container">
+      <div class="jobs__row">
+        <h2 class="jobs__header">Recently added jobs:</h2>
+        <div class="jobs__slider swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Hermes -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/hermes-logo.svg" alt="Hermés logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">Art director</h3>
+                    <span class="jobs__company-name">Hermès International S.A.</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Harrisburg, Pennsylvania</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$1,240</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Coca-Cola -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/coca-cola-logo.svg" alt="Coca-Cola logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">HR Head of Operations</h3>
+                    <span class="jobs__company-name">The Coca-Cola Company</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Atlanta, Georgia</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$1,980</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Dropbox -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/dropbox-logo.svg" alt="Dropbox logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">Business Strategy Associate</h3>
+                    <span class="jobs__company-name">Dropbox, Inc.</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">San Francisco, California</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$3,100</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- McDonald's -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/mcdonalds-logo.svg" alt="McDonald's logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">Financial Strategist</h3>
+                    <span class="jobs__company-name">McDonald's Corporation</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Columbus, Ohio</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$2,600</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Coca-Cola -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/coca-cola-logo.svg" alt="Coca-Cola logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">HR Head of Operations</h3>
+                    <span class="jobs__company-name">The Coca-Cola Company</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Atlanta, Georgia</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$1,980</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Coca-Cola -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/coca-cola-logo.svg" alt="Coca-Cola logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">HR Head of Operations</h3>
+                    <span class="jobs__company-name">The Coca-Cola Company</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Atlanta, Georgia</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$1,980</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Coca-Cola -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/coca-cola-logo.svg" alt="Coca-Cola logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">HR Head of Operations</h3>
+                    <span class="jobs__company-name">The Coca-Cola Company</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Atlanta, Georgia</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$1,980</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Coca-Cola -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/coca-cola-logo.svg" alt="Coca-Cola logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">HR Head of Operations</h3>
+                    <span class="jobs__company-name">The Coca-Cola Company</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Atlanta, Georgia</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$1,980</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Coca-Cola -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/coca-cola-logo.svg" alt="Coca-Cola logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">HR Head of Operations</h3>
+                    <span class="jobs__company-name">The Coca-Cola Company</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Atlanta, Georgia</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$1,980</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Coca-Cola -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/coca-cola-logo.svg" alt="Coca-Cola logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">HR Head of Operations</h3>
+                    <span class="jobs__company-name">The Coca-Cola Company</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Atlanta, Georgia</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$1,980</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Coca-Cola -->
+            <div class="swiper-slide jobs__slide">
+              <div class="jobs__job">
+                <div class="jobs__logo-box">
+                  <img src="./assets/img/coca-cola-logo.svg" alt="Coca-Cola logo" class="jobs__logo">
+                </div>
+                <div class="jobs__info">
+                  <div class="jobs__details">
+                    <h3 class="jobs__position">HR Head of Operations</h3>
+                    <span class="jobs__company-name">The Coca-Cola Company</span>
+                    <div class="jobs__location-details">
+                      <img src="./assets/img/map-icon.svg" alt="Map marker icon" class="jobs__location-icon">
+                      <span class="jobs__location">Atlanta, Georgia</span>
+                    </div>  
+                  </div>
+                  <div class="jobs__reward">
+                    <div class="jobs__amount">
+                      <span class="jobs__amount-total">$1,980</span>
+                      <span class="jobs__amount-text">of hiring reward</span>
+                    </div>
+                    <a href="#" class="jobs__btn">
+                      <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0590472 23.8713L0.0590604 12.362C2.6167 10.2306 9.1335 10.6569 14.5523 10.6569H46.0965C49.8477 10.6569 49.933 12.7882 49.933 15.3458V41.7748C50.0751 42.9115 50.274 46.208 49.933 50.3003C49.592 54.3925 47.5854 54.563 46.0965 54.563H35.0134C35.5818 50.8686 34.5872 43.5652 26.0617 43.9062C17.5363 44.2472 16.2574 51.1528 16.6837 54.563H2.61668C-0.618499 54.563 0.0590664 45.6112 0.0590472 41.7748C4.53178 41.7748 12.6767 40.9223 11.9947 32.3968C11.3127 23.8713 3.75341 23.1609 0.0590472 23.8713Z" fill="#5C50EB" />
+                        <path d="M14.1261 3.83646V11.9356H19.6676V6.82037C19.6676 6.10991 20.0086 4.689 21.3727 4.689H29.8982C30.4665 4.689 31.6033 5.11528 31.6033 6.82037V11.9356H36.7185V3.83646C36.7185 0.767291 33.8767 0 32.4558 0H18.8151C14.7228 0 13.984 2.55764 14.1261 3.83646Z" fill="#5C50EB" />
+                        <circle cx="53.7695" cy="32.3968" r="10.2306" fill="#5C50EB" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="jobs__popup">
+                  <p class="jobs__popup-text">Be the first one to recommend!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: jobs -->
+
+  <!-- scripts -->
+
+  <!-- swiper slider -->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="./js/swiper-slider.js"></script>
+
+</body>
+</html>

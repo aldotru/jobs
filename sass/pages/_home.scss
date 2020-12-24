@@ -1,0 +1,244 @@
+// START: Hero
+
+.hero {
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+
+  &__row {
+    margin-top: 4rem;
+    position: relative;
+
+    @include flexBetween-center;
+  }
+
+  &__subline {
+    color: $gray-dark-1;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.25rem;
+
+    @include dmMono-regular;
+    @include textUpper;
+  }
+
+  &__info-box {
+    max-width: 32.5rem;
+  }
+
+  &__header {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    &-span {
+      font-weight: bold;
+    }
+
+  }
+
+  &__img-box {
+    position: absolute;
+      right: 0;
+    max-width: 400px;
+    transform: translateX(-16px);
+  }
+
+}
+
+// END: Hero
+
+// START: Jobs
+
+.jobs {
+  background-image: linear-gradient(
+    to bottom,
+    $gray-light-1 50%,
+    $white 10%
+  );
+  padding: 5rem 0;
+
+  &__header {
+    color: $gray-dark-1;
+    font-weight: bolder;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+
+    @include dmMono-regular;
+    @include textUpper;
+  }
+
+  &__slider {
+    overflow: visible !important;
+  }
+
+  &__slide {
+    width: auto !important;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+  }
+
+  &__job {
+    background-color: $white;
+    // border: solid 1px black;
+    border-radius: 6px;
+    // max-width: 16.5rem;
+    width: 17rem;
+    position: relative;
+
+    @include box-shadow;
+  }
+
+  &__logo-box {
+    background-color: $white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    min-height: 175px;
+    padding: 3rem 0;
+    position: relative;
+
+    @include flexCenter;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+        bottom: 0;
+        left: 50%;
+      width: 180px;
+      height: 1px;
+      background-color: $gray-light-1;
+      transform: translateX(-50%);
+    }
+
+  }
+
+  &__logo {
+    max-width: 8rem;
+  }
+
+  &__details {
+    padding: 1.5rem 2rem;
+  }
+
+  &__position {
+    color: $black;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    text-transform: capitalize;
+  }
+
+  &__company-name {
+    color: $gray-dark-2;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__location-details {
+    display: flex;
+      align-items: center;
+      justify-content: flex-start; 
+  }
+
+  &__location {
+    color: $gray-dark-1;
+    font-size: 0.875rem;
+  }
+
+  &__location-icon {
+    max-width: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+  &__reward {
+    background-color: $gray-light;
+    padding: 1.5rem 2rem;
+
+    @include flexBetween-center;
+  }
+
+  &__amount {
+    display: flex;
+      flex-direction: column;
+
+    &-total {
+      background-image: linear-gradient(
+        to right,
+        $blue-1,
+        $blue-2 );
+      -webkit-background-clip: text;
+      color: transparent;
+      display: inline-block;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &-text {
+      color: $gray-dark-1;
+      font-size: 0.75rem;
+    }
+
+  }
+
+  &__btn {
+    padding: 1.5rem;
+    background-color: transparent;
+    border: solid 1px $gray-light-1;
+    border-radius: 100px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $blue-1;
+      border: transparent;
+      box-shadow: 0 0.5rem 1rem rgba($purple-1, 0.3);
+    }
+
+  }
+  
+  &__btn svg {
+    max-width: 1.5rem;
+    height: unset;
+    width: unset;
+    position: absolute;
+      top: 50%;
+      left: 53%;
+    transform: translate(-50%, -53%);
+  }
+
+  &__btn:hover svg path,
+  &__btn:hover svg  circle {
+    fill: $white;
+  }
+
+  &__popup {
+    padding: 1.5rem 2rem;
+    // background: red;
+    // position: absolute;
+    //   bottom: 0;
+    //   left: auto;
+    // width: 100%;
+    // z-index: -1;
+  }
+
+  &__btn:hover &__popup {
+    z-index: 2;
+  }
+
+  &__popup-text {
+    color: $gray-dark-2;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+}
+
+// END: Jobs

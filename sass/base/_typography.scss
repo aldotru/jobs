@@ -1,0 +1,53 @@
+// START: DM Mono font import
+
+@font-face {
+  font-family: "DM Mono";
+  src: url("../assets/fonts/dm-mono/DMMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url("../assets/fonts/dm-mono/DMMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+// END: DM Mono font import
+
+// START: Work Sans font import
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/work-sans/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/work-sans/WorkSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+// END: Work Sans font import
+
+body {
+  color: $black;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+a {
+	color: inherit;
+	display: inline-block;
+	text-decoration: none;
+}

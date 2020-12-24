@@ -1,0 +1,10 @@
+.btn {
+  background-color: $purple-2;
+  border-radius: 100px;
+  padding: 1.25rem 2rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $purple-1;
+  }
+}

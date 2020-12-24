@@ -1,0 +1,48 @@
+.header {
+  padding: 2rem 0;
+  position: relative;
+
+  &__row {
+    @include flexBetween-center;
+  }
+
+  &__logo-box {
+    max-width: 1.75rem;
+  }
+
+  &__nav {
+    @include flexBetween-center;
+  }
+
+  &__list {
+    color: $white;
+    font-size: 0.75rem;
+
+    @include dmMono-regular;
+    @include flexBetween-center;
+
+
+    &:nth-child(1) {
+      margin-right: 10rem;
+    }
+
+  }
+
+  &__item {
+    @include textUpper
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+  }
+
+  &__decor {
+    position: absolute;
+      right: 0;
+      top: 0;
+    transform: translate(320px, -180px);
+    z-index: -1;
+  }
+
+}

@@ -1,0 +1,38 @@
+@mixin dmMono-light {
+  font-family: "DM Mono", monospace, sans-serif;
+  font-weight: 300;
+}
+
+@mixin dmMono-regular {
+  font-family: "DM Mono", monospace, sans-serif;
+}
+
+@mixin flexBetween-center {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexBetween-top {
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin flexCenter {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textUpper {
+  text-transform: uppercase;
+}
+
+@mixin outline-none {
+  outline: none;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 1rem 1rem rgba($black, 0.1);
+}
