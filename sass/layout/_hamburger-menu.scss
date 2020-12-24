@@ -12,17 +12,33 @@
 
   @include flexCenter;
 
+  @media only screen and (max-width: $phone) {
+    max-width: 100%;
+  }
+
+  &.show {
+    transform: translateX(0);
+  }
+
   &__btn {
     background-color: $white;
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    padding: 1rem;
-
+    padding: 0.875rem;
+    position: fixed;
+      right: 1.5rem;
+      top: 1.5rem;
+    z-index: 99;
+      
     @include box-shadow;
-
+      
     @media screen and (min-width: $tablet-port) {
       display: none;
+    }
+      
+    @media screen and (max-width: $phone) {
+      top: 1rem;
     }
 
   }

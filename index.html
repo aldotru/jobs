@@ -36,7 +36,7 @@
   <title>Job Search - Find the best jobs arou|2 nd the world</title>
 </head>
 <body>
-  
+
   <!-- START: header -->
   <header class="header">
     <div class="container">
@@ -44,9 +44,6 @@
         <a href="/" class="header__logo-box">
           <img src="./assets/img/logo.svg" alt="Company logo" class="header__logo">
         </a>
-        <button class="hamburger__btn">
-          <img src="./assets/img/hamburger-menu-icon.svg" alt="Hamburger menu icon" class="hamburger__icon">
-        </button>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -487,13 +484,58 @@
   </section>
   <!-- END: jobs -->
 
+  <!-- START: hamburger menu -->
+
+  <button class="hamburger__btn">
+    <img src="./assets/img/hamburger-menu-icon.svg" alt="Hamburger menu icon" class="hamburger__icon">
+  </button>
+
+  <div class="hamburger">
+    <nav class="hamburger__nav">
+      <ul class="hamburger__list">
+        <li class="hamburger__item header__item">
+          <a href="#" class="hamburger__link header__link">Home</a>
+        </li>
+        <li class="hamburger__item header__item">
+          <a href="#" class="hamburger__link header__link">About us</a>
+        </li>
+        </li>
+        <li class="hamburger__item header__item">
+          <a href="#" class="hamburger__link header__link">Blog</a>
+        </li>
+        <li class="hamburger__item header__item">
+          <a href="#" class="hamburger__link header__link">How it works?</a>
+        </li>
+        <ul class="hamburger__nav-access">
+          <li class="hamburger__item header__item">
+            <a href="#" class="hamburger__link header__link">Login</a>
+          </li>
+          <li class="hamburger__item header__item">
+            <a href="#" class="hamburger__link btn">Sing up</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+  </div>
+  <!-- END: hamburger menu -->
+
   <!-- START: scripts -->
-  
-  <!-- swiper slider -->
+
   <script src="./dist/bundle.js" type="module"></script>
 
-  <!-- END: scripts -->
+  <!-- hamburger menu functionality -->
+  <script>
+      const hamburgerBtn = document.querySelector('.hamburger__btn');
+      const hamburgerMenu = document.querySelector('.hamburger');
 
+      hamburgerBtn.addEventListener('click', function () {
+
+        hamburgerMenu.classList.toggle('show');
+
+      });
+  </script>
+
+  <!-- END: scripts -->
 
 </body>
 </html>
