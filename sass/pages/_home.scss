@@ -4,11 +4,20 @@
   margin-top: 9rem;
   margin-bottom: 3rem;
 
+  @media only screen and (max-width: $phone) {
+    margin-top: 3rem;
+  }
+
   &__row {
     margin-top: 4rem;
     position: relative;
 
     @include flexBetween-center;
+
+    @media only screen and (max-width: $phone) {
+      margin-top: 0;
+    }
+      
   }
 
   &__subline {
@@ -25,11 +34,20 @@
 
   &__info-box {
     max-width: 32.5rem;
+    
+    @media only screen and (max-width: $tablet-port) {
+      max-width: 46rem;
+    } 
+
   }
 
   &__header {
     font-size: 2rem;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: $phone) {
+      font-size: 1.5rem;
+    }
 
     &-span {
       font-weight: bold;
@@ -42,6 +60,11 @@
       right: 0;
     max-width: 400px;
     transform: translateX(-16px);
+
+    @media only screen and (max-width: $tablet-port) {
+      display: none;
+    }
+
   }
 
 }
@@ -53,10 +76,21 @@
 .jobs {
   background-image: linear-gradient(
     to bottom,
-    $gray-light-1 50%,
-    $white 10%
+    $gray-light-1 45%,
+    $white 0
   );
-  padding: 5rem 0;
+  min-height: 43.5em;
+  padding: 5rem 0 8rem;
+  overflow: hidden;
+  
+  @media only screen and (max-width: $phone) {
+    background-image: linear-gradient(
+      to bottom,
+      $gray-light-1 38%,
+      $white 0
+    );
+    padding: 2rem 0 3rem;
+  }
 
   &__header {
     color: $gray-dark-1;
@@ -74,7 +108,7 @@
   }
 
   &__slide {
-    width: auto !important;
+    width: 17rem !important;
 
     &:not(:last-child) {
       margin-right: 1.5rem;
@@ -84,11 +118,11 @@
 
   &__job {
     background-color: $white;
-    // border: solid 1px black;
     border-radius: 6px;
-    // max-width: 16.5rem;
-    width: 17rem;
+    // max-width: 17rem;
+    // width: 100%;
     position: relative;
+    z-index: 2;
 
     @include box-shadow;
   }
@@ -220,16 +254,23 @@
 
   &__popup {
     padding: 1.5rem 2rem;
-    // background: red;
-    // position: absolute;
-    //   bottom: 0;
-    //   left: auto;
-    // width: 100%;
-    // z-index: -1;
+    background: $white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: absolute;
+      bottom: 0;
+      left: auto;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    
+    @include box-shadow;
   }
 
-  &__btn:hover &__popup {
-    z-index: 2;
+  &__job:hover &__popup {
+    bottom: -60px;
+    opacity: 1;
   }
 
   &__popup-text {

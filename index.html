@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   
-  <!-- swiper slider -->
+  <!-- swiper slider styles -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <!-- favicon -->
@@ -36,6 +36,7 @@
   <title>Job Search - Find the best jobs arou|2 nd the world</title>
 </head>
 <body>
+  
   <!-- START: header -->
   <header class="header">
     <div class="container">
@@ -43,6 +44,9 @@
         <a href="/" class="header__logo-box">
           <img src="./assets/img/logo.svg" alt="Company logo" class="header__logo">
         </a>
+        <button class="hamburger__btn">
+          <img src="./assets/img/hamburger-menu-icon.svg" alt="Hamburger menu icon" class="hamburger__icon">
+        </button>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -72,6 +76,7 @@
     <img src="./assets/img/hero-decor.svg" alt="Blue background decoration item" class="header__decor">
   </header>
   <!-- END: header -->
+
   <!-- START: hero -->
   <section class="hero">
     <div class="container">
@@ -93,6 +98,7 @@
     </div>
   </section>
   <!-- END: hero -->
+
   <!-- START: jobs -->
   <section class="jobs">
     <div class="container">
@@ -481,11 +487,13 @@
   </section>
   <!-- END: jobs -->
 
-  <!-- scripts -->
-
+  <!-- START: scripts -->
+  
   <!-- swiper slider -->
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-  <script src="./dist/bundle.js"></script>
+  <script src="./dist/bundle.js" type="module"></script>
+
+  <!-- END: scripts -->
+
 
 </body>
 </html>

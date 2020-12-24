@@ -44,6 +44,11 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
+
+  @media only screen and (max-width: $phone) {
+    font-size: 0.875rem;
+  }
+
 }
 
 a {

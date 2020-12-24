@@ -1,0 +1,53 @@
+.hamburger {
+  background-color: $orange;
+  height: 100vh;
+  max-width: 20rem;
+  width: 100%;
+  position: fixed;
+    right: 0;
+    top: 0;
+  z-index: 4;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+
+  @include flexCenter;
+
+  &__btn {
+    background-color: $white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 1rem;
+
+    @include box-shadow;
+
+    @media screen and (min-width: $tablet-port) {
+      display: none;
+    }
+
+  }
+
+  &__item {
+    color: $white;
+    font-size: 2rem;
+    margin-right: 0 !important;
+
+    &:not(:last-child) {
+      margin-bottom: 0.875rem;
+    }
+
+  }
+
+  &__nav-access {
+    display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        font-size: 1rem;
+        margin-bottom: 0 !important;
+      }
+
+  }
+
+}

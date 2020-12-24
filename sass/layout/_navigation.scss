@@ -2,6 +2,10 @@
   padding: 2rem 0;
   position: relative;
 
+  @media only screen and (max-width: $phone) {
+    padding: 1.5rem 0;
+  }
+
   &__row {
     @include flexBetween-center;
   }
@@ -12,6 +16,11 @@
 
   &__nav {
     @include flexBetween-center;
+
+    @media only screen and (max-width: $tablet-port) {
+      display: none;
+    }
+
   }
 
   &__list {
@@ -24,12 +33,17 @@
 
     &:nth-child(1) {
       margin-right: 10rem;
+      
+      @media only screen and (max-width: 71.25em) {
+        margin-right: 3rem;
+      }
+
     }
 
   }
 
   &__item {
-    @include textUpper
+    @include textUpper;
 
     &:not(:last-child) {
       margin-right: 2rem;
@@ -43,6 +57,11 @@
       top: 0;
     transform: translate(320px, -180px);
     z-index: -1;
+
+    @media only screen and (max-width: $phone) {
+      display: none;
+    }
+
   }
 
 }

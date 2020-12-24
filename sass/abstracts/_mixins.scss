@@ -36,3 +36,8 @@
 @mixin box-shadow {
   box-shadow: 0 1rem 1rem rgba($black, 0.1);
 }
+
+@mixin show {
+  visibility: visible;
+  opacity: 1;
+}
