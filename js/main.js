@@ -1,7 +1,4 @@
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/swiper-bundle.css';
+// const swiperSlider = require("swiper")
 
 // Jobs slider
 const swiper = new Swiper('.swiper-container', {
