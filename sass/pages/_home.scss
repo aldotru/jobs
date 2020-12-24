@@ -76,7 +76,7 @@
 .jobs {
   background-image: linear-gradient(
     to bottom,
-    $gray-light-1 45%,
+    $gray-light-1 43.5%,
     $white 0
   );
   min-height: 43.5em;
@@ -86,7 +86,7 @@
   @media only screen and (max-width: $phone) {
     background-image: linear-gradient(
       to bottom,
-      $gray-light-1 38%,
+      $gray-light-1 42%,
       $white 0
     );
     padding: 2rem 0 3rem;

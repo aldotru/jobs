@@ -295,13 +295,13 @@ a {
         display: none; } }
 
 .jobs {
-  background-image: linear-gradient(to bottom, #EAEEF4 45%, #FFF 0);
+  background-image: linear-gradient(to bottom, #EAEEF4 43.5%, #FFF 0);
   min-height: 43.5em;
   padding: 5rem 0 8rem;
   overflow: hidden; }
   @media only screen and (max-width: 37.5em) {
     .jobs {
-      background-image: linear-gradient(to bottom, #EAEEF4 38%, #FFF 0);
+      background-image: linear-gradient(to bottom, #EAEEF4 42%, #FFF 0);
       padding: 2rem 0 3rem; } }
   .jobs__header {
     color: #98969B;
