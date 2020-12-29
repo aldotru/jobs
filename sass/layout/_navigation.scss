@@ -7,7 +7,15 @@
   }
 
   &__row {
+    position: relative;
+    z-index: 99;
+
     @include flexBetween-center;
+
+    @media only screen and (max-width: $tablet-port) {
+      z-index: unset;
+    }
+
   }
 
   &__logo-box {
@@ -56,7 +64,20 @@
       right: 0;
       top: 0;
     transform: translate(320px, -180px);
-    z-index: -1;
+    // z-index: 1;
+
+    
+    @media only screen and (min-width: $big-screen) {
+      right: 7.5rem;
+    }
+    
+    @media only screen and (min-width: 106.5em) {
+      right: 15rem;
+    }
+
+    @media only screen and (max-width: $tablet-port) {
+      display: none;
+    }
 
     @media only screen and (max-width: $phone) {
       display: none;
